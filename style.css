@@ -2,7 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 .background {
 	height: 100vh;
@@ -25,9 +27,9 @@
 	position: fixed;
 	top: 40vh;
 	left: 100vw;
-	height: 70vh;
-	width: 6vw;
-	background:radial-gradient(lightgreen 50%, green);
+	height: 68vh;
+	width: 7.9vw;
+	background:radial-gradient(rgb(39, 3, 144) 50%, rgb(21, 0, 156));
 	border: 5px solid black;
 }
 .message {
@@ -36,17 +38,20 @@
 	color: black;
 	top: 30%;
 	left: 50%;
-	font-size: 4em;
+	font-size: 3em;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
 .messageStyle{
-	background: white;
+	margin-top: auto;
+	background: rgba(255, 255, 255, 0.56); /* Adjust the last value (0.9) to control the opacity */
 	padding: 30px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 5%;
 }
+
 .score {
+	
 	position: fixed;
 	z-index: 10;
 	height: 10vh;
@@ -54,19 +59,23 @@
 	font-weight: 100;
 	color: white;
 	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
 	top: 0;
 	left: 0;
 	margin: 10px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 .score_val {
-	color: gold;
+
 	font-weight: bold;
 }
 @media only screen and (max-width: 1080px) {
+	.messageStyle{
+		margin-top: 10 rem;
+	}
     .message{
-		font-size: 50px;
+		font-size: 40px;
 		top: 50%;
 		white-space: nowrap;
 	}
